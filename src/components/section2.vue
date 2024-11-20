@@ -253,7 +253,7 @@ export default {
       if (this.selectedOption) {
         try {
           const response = await axios.get(
-            `http://api.tvmaze.com/search/shows?q=${this.selectedOption}`
+            `https://api.tvmaze.com/search/shows?q=${this.selectedOption}`
           );
           this.shows = response.data;
           console.log(response.data)
